@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif, "Helvetica Neue";
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+header {
+  background-color: black;
+  padding: 1rem;
+}
+
+.master {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.master .writer img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: none;
+}
+
+
+.search {
+  margin-bottom: 1rem;
+}
+
+.search img {
+  width: 30px;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.background {
+  background-image: url("images/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1px solid #615e5e;
+  padding: 1rem;
+}
+
+.text {
+  font-size: 1.25rem;
+  margin: 0 auto;
+}
+
+.text h1 {
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.text p {
+  margin-bottom: 0.5rem;
+}
+
+.text h2 {
+  margin-top: 1rem;
+}
+
+
+.imageAugusto {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.imageAugusto img {
+
+  margin-bottom: 1rem;
+}
+
+.imageAugusto p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #c0bebe;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+
+
+.mostread {
+  background-color: #d1d1d1;
+  border-top: 6px solid rgb(83, 74, 74);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.mostread h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vendedor,
+.dias {
+  margin-bottom: 2rem;
+}
+
+.vendedor img,
+.dias img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.vendedor p,
+.dias p {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.footer {
+  background-color: #202220;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-top: 6px solid #534a4a;
+}
+
+.footer .line1footer {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .line1footer > * {
+  margin: 0.5rem 0;
+}
+
+.masterfooterlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.masterfooterlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.masterfooterlist li {
+  margin: 0.25rem 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0f0f0f;
+}
+
+
+@media (min-width: 768px) {
+
+  .master {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .master .writer img {
+    margin: 30px 50px;
+    width: 270px;
+    height: 60px;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  .search {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  .search img {
+    width: 50px;
+    margin-top: 20px;
+  }
+
+
+  .background {
+    min-height: 800px;
+  }
+
+  .text {
+    font-size: 2rem;
+    margin-top: -300px;
+  }
+
+
+  .imageAugusto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .mostread {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+    padding: 50px;
+  }
+  .mostread > * {
+    flex: 1;
+  }
+  .mostread .vendedor,
+  .mostread .dias {
+    margin-bottom: 0;
+  }
+  .mostread h1 {
+    align-self: center;
+    text-align: center;
+    margin: 0 2rem;
+  }
+
+
+  .footer .line1footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .masterfooterlist {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
