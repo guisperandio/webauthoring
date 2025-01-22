@@ -33,11 +33,6 @@ header {
 .master .writer img {
   width: 200px;
   height: auto;
-  margin-bottom: 1rem;
-}
-
-nav {
-  margin-bottom: 1rem;
 }
 
 nav ul {
@@ -125,7 +120,6 @@ nav a {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 40px;
-  margin: 0 auto;
 }
 
 
@@ -156,7 +150,6 @@ nav a {
 .dias p {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
   text-align: justify;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -194,6 +187,7 @@ nav a {
   padding: 0;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
 }
 
 .masterfooterlist li {
@@ -227,6 +221,7 @@ footer a:hover {
   nav ul {
     display: flex;
     gap: 1rem;
+    align-items: center;
   }
 
   nav li {
@@ -268,18 +263,20 @@ footer a:hover {
     justify-content: space-between;
     text-align: left;
     padding: 50px;
-  }
-  .mostread > * {
-    flex: 1;
+    gap: 1rem;
   }
   .mostread .vendedor,
   .mostread .dias {
     margin-bottom: 0;
+    flex: 2;
   }
   .mostread h1 {
     align-self: center;
-    text-align: center;
-    margin: 0 2rem;
+    text-align: left;
+    flex: 1;
+  }
+  .mostread > * {
+    flex: 1;
   }
 
 
@@ -290,6 +287,6 @@ footer a:hover {
 
   .masterfooterlist {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
